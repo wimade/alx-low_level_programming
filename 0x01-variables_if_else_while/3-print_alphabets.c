@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-
 /**
- *
  * main - return the required output
  *
  * Description: print a to z in upper and lower
@@ -10,7 +8,6 @@
  * Return: return integer value 0
  *
  */
-
 int main(void)
 {
 	char alphabet;
@@ -22,7 +19,7 @@ int main(void)
 }
 	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 {
-	putchar(alphabet);
+		putchar(alphabet);
 
 }
 	putchar('\n');
