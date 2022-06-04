@@ -2,18 +2,18 @@
 /**
  * main- print out the result from the function
  *
- * Description: use to print alphabet from a to z
+ * Description: use to print number from 0 to 9
  *
  * Return: return integer value o
  *
  */
 int main(void)
 {
-	int alphabet;
+	int number;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	for (number = '0'; number <= '9'; number++)
 	{
-		putchar(alphabet);
+		putchar(number);
 	}
 	putchar('\n');
 	return (0);
