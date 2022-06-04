@@ -4,11 +4,9 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - check for conditions
+ * main - Entry point
  *
- * Description: return the results for the condition
- *
- * Return: return the integer value 0
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
