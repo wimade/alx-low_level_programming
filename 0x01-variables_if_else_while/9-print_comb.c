@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main- print out the result from the function
+ * main - return the result for the function
  *
- * Description: use to print number from 0 to 9
+ * Description: pringt the required results
  *
- * Return: return integer value o
+ * Return: return the integer value 0
  *
  */
 int main(void)
@@ -13,11 +13,11 @@ int main(void)
 
 	for (num = 0; num < 10; num++)
 	{
-		putchar(num + '0'));
+		putchar(num + '0');
 		if (num < 9)
 		{
-				putchar(',');
-				putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
