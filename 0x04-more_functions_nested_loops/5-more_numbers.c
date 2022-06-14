@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- *
  * more_numbers - print 0 through 14 ten times
  *
  * Description: print out the required result
@@ -22,4 +21,5 @@ void more_numbers(void)
 			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
+	}
 }
