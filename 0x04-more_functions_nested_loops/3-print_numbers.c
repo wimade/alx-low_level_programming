@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - print all numbers 0 through 9 and then new line
+ * print_numbers - print all numbers 0 through 9 and then new line
  *
  * Description: print out the required result
  *
@@ -9,7 +9,7 @@
  *
  */
 
-void print_number(void)
+void print_numbers(void)
 {
 	 int i;
 
