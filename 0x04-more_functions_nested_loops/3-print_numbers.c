@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_numbers - print all numbers 0 through 9 and then new line
  *
@@ -8,7 +7,6 @@
  * Return: return void
  *
  */
-
 void print_numbers(void)
 {
 	 int i;
