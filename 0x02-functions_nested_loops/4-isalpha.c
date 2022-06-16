@@ -1,16 +1,27 @@
 #include "main.h"
-
+#include <ctype.h>
 /**
  * _isalpha - checks for alphabetic characters
- * @c: character to check
+ * @c: value to be checked by the function
  *
- * Return: 0 or 1
+ * Description: return the required results
+ *
+ * Return: return the integer value 0
+ *
  */
-
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-			return (1);
-	else
+	int check;
+
+	check = isalpha(c);
+
+	if (check != 0)
+	{
+		return (1);
+	}
+	if (check == 0)
+	{
 		return (0);
+	}
+	return (0);
 }
