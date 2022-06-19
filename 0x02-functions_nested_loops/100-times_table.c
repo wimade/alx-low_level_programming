@@ -48,4 +48,4 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				else
-					_putcahr('\n'); }}}}
+					_putchar('\n'); }}}}
