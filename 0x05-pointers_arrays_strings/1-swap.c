@@ -1,19 +1,18 @@
 #include "main.h"
-
 /**
- * swap_int - Swaps this inputs.
- *
- * @n: int a
- * @b: int b
+ * swap_int - swap argument a with b
+ * @a: first argument
+ * @b: second argument
  *
  * Description: return the required result
  *
- * Return: Always 0
+ * Return: return void
+ *
  */
 void swap_int(int *a, int *b)
 {
-	int c = *a;
+	int x = *a;
 
 	*a = *b;
-	*b = c;
+	*b = x;
 }

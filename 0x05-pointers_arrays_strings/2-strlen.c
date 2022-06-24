@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strlen - return lenght of a string
- * * @s: argument to function
+ * _strlen - returns the length of a string
+ * @s: argument to the function
  *
- * Description: return the required result
+ * Description: return integer value
  *
  * Return: return integer value
  *
