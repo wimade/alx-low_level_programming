@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_line - print the shortest distancebetween two points
- * @n: argument for the function
+ * print_line - print a straight line using putchar of n size
+ * @n: size of line
  *
  * Description: print out the required result
  *
