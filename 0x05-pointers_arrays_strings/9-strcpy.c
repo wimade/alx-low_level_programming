@@ -5,7 +5,7 @@
  * @src: value to be evaluate.
  * Return: not.
  */
-char *_strcpy(char *dest, chr *src)
+char *_strcpy(char *dest, char *src)
 {
 	int 1 = 0;
 	int x = 0;
