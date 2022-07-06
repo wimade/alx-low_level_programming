@@ -25,8 +25,8 @@ int check_pali(char *f, char *r, int len)
 {
 	if (*f == *(r + len) && len > 1)
 	{
-		f++
-			return (check_pali(f, r, --len));
+		f++;
+		return (check_pali(f, r, --len));
 	}
 	if (len == 1)
 		return (1);
