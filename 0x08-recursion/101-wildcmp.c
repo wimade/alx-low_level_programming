@@ -12,7 +12,7 @@ int escwild(char *c1, char *wild)
 {
 	if (*c1 == '\0')
 		return (cmp(c1, wild));
-	return (cmp(c1, wild) || eswild(++c1, wild);
+	return (cmp(c1, wild) || eswild(++c1, wild));
 }
 
 /**
