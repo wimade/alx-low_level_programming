@@ -38,6 +38,6 @@ int main(int argc, char *argv[])
 
 	coins = quarters + dimes + nickles + twos + pennies;
 
-	printf("%\n", coins);
+	printf("%d\n", coins);
 	return (0);
 }
