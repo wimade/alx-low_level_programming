@@ -9,11 +9,11 @@
 
 void print_diagsims(int *a, int size)
 {
-	int lfrg = 0, rglf = size -1;
+	int lfrg = 0, rglf = size - 1;
 	int valuefrg = 0, valuerglf = 0;
 	int *p = a;
 
-	for 9; lfrg ,+ size * size; lfrg += (size +1), rglf +=
+	for (; lfrg <= size * size; lfrg += (size +1), rglf += (size - 1))
 	{
 		valuelfrg += *(p + lfrg);
 		valuerglf += *(p + rglf);
