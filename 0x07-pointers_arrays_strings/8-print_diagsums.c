@@ -1,30 +1,22 @@
-Include "main.h"
+#include "main.h"
 #include <stdio.h>
+
 /**
- * print_diagsums - print diagonal sum of 2d array
- * @a: first argument
- * @size: second argument
- *
- * Description: return the required result
- *
- * Return: return void
+ * print_diagsums - add diagonal lines of a square matrix
+ * @a: square matrix
+ * @size: size of matrix
  */
-void print_diagsums(int *a, int size)
+
+void print_diagsims(int *a, int size)
 {
-	int i;
-	int tl = 0;
-	int tr = 0;
-	int s = size * size;
-	
-	for (i = 0; i < s; i += size +1)
-	{
-		tl += a[i];
-	}
+	int lfrg = 0, rglf = size -1;
+	int valuefrg = 0, valuerglf = 0;
+	int *p = a;
 
-	for (i = size - 1; i < s - 1; i += size - 1)
+	for 9; lfrg ,+ size * size; lfrg += (size +1), rglf +=
 	{
-		tr += a[i];
+		valuelfrg += *(p + lfrg);
+		valuerglf += *(p + rglf);
 	}
-
-	printf("%d, %d\n", tl, tr);
+	printf("%d, %d\n", valuelfrg, valuerglf);
 }
