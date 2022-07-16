@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 			if (*h == *n)
 			{
 				n++;
-				n++;
+				h++;
 			}
 			else
 				break;
