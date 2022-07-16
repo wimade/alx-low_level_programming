@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	int tr = 0;
 	int s = size * size;
 	
-	for (i = 0; i < s; i += size -1)
+	for (i = 0; i < s; i += size +1)
 	{
 		tl += a[i];
 	}
