@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * chartoint - function that checks array of characters fro integers
- * @c: array of charactres
+ * chartoint - function that checks array of characters for integers
+ * @c: array of characters
  * Return: 0 if successful, -1 if fails
  */
 int chartoint(char *c)
