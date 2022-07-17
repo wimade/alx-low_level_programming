@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	dimes = remainder / 10;
 	remainder = remainder % 10;
 	nickles = remainder / 5;
-	remainder = remainder % 2;
+	remainder = remainder % 5;
 	twos = remainder / 2;
 	remainder = remainder % 2;
 	pennies = remainder / 1;
