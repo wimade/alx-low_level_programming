@@ -1,25 +1,29 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337
- * @s: string to encode
- *
- * Return: address of s
+ * leet - function that encodes a string into 1337
+ * @str: character to be checked
+ * Return: if seperator return 1. Otherwise return 0;
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i, j;
+	/*Declaring variables*/
+	int count = 0, x = 0;
+	char *letters = "aeotlAEOTL";
+	char *num = "4307143071";
 
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
-
-	for (i = 0, *(s + i); i++)
+	/*Start WHILE*/
+	while (str[count] != '\0')
 	{
-		for (j = 0; j <= 9; j++)
+		x = 0;
+		while (letters[x] != '\0') /*Evaluate all cases*/
 		{
-			if (a[j] == *(s + i))
-				*(s + i) = b[j];
+			if (str[count] == letters[x]) /*Match between string a letters*/
+				str[count] = nums[x];
+			x++;
 		}
-	}
-	return (s);
+		count++; /*Add count*/
+	} /*End WHILE*/
+
+	return (str);
 }
