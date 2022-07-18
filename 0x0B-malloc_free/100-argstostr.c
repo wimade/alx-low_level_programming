@@ -9,17 +9,17 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int lenght = 0, m = 0, n = 0, count = 0;
+	int length = 0, m = 0, n = 0, count = 0;
 	char *y;
 
-	if (ac == 0 || av == NULL))
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (m = 0; m < ac; m++)
 	{
 		for (n = 0; av[m][n] != 0; n++)
 		{
-			length++;
+			lenght++;
 		}
 		length++;
 	}
