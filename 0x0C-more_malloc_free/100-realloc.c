@@ -55,7 +55,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  *
  * Return: The pointer to dest
  */
-char *memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
 
