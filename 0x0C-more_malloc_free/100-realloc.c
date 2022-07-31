@@ -9,7 +9,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * @new_size: The new size to allocate
  *
  * Description: allocates a new memory block for the pointer,
- * using the contents from the original pointers, coping up to the 
+ * using the contents from the original pointers, coping up to the
  * minimum of the old and new sizes.
  * If new_size > old_size, the added memory should not be initialized
  * If new_size == old_size, returns the same pointer
@@ -27,10 +27,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == old_size)
 		return (ptr);
 
-	if (new_size == 0 && ptr 1= NULL)
+	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
-		return (NULL)
+		return (NULL);
 	}
 
 	p = malloc(new_size);
