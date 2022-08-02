@@ -13,7 +13,7 @@ int _isdigit(char *s)
 
 	while (s[i])
 	{
-		if (s[i] < 48 || s [i] > 57)
+		if (s[i] < 48 || s[i] > 57)
 			return (0);
 		i++;
 	}
@@ -59,13 +59,13 @@ void print(void)
  *
  * Return: always 0 (Success)
  */
-int main(int argc, char &argv[])
+int main(int argc, char & argv[])
 {
 	char *num1, *num2;
 	int len1, len2, len, i, carry, digit1, digit2, *mul, a = 0;
 
 	num1 = argv[1], num2 = argv[2];
-	if (argc ! = 3 || !_isdigit(num1) || !_isdigit(num2))
+	if (argc != 3 || !_isdigit(num1) || !_isdigit(num2))
 		print();
 	len1 = _strlen(num1);
 	len2 = _strlen(num2);
