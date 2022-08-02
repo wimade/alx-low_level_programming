@@ -32,7 +32,7 @@ int _strlen(char *s)
 
 	while (s[i] != '\0')
 	{
-		i++
+		i++;
 	}
 	return (i);
 }
@@ -48,7 +48,7 @@ void print(void)
 	_putchar(114);
 	_putchar(111);
 	_putchar(114);
-	putchar(10);
+	_putchar(10);
 	exit(98);
 }
 
@@ -59,7 +59,7 @@ void print(void)
  *
  * Return: always 0 (Success)
  */
-int main(int argc, char & argv[])
+int main(int argc, char *argv[])
 {
 	char *num1, *num2;
 	int len1, len2, len, i, carry, digit1, digit2, *mul, a = 0;
@@ -71,7 +71,7 @@ int main(int argc, char & argv[])
 	len2 = _strlen(num2);
 	len = len1 + len2;
 	mul = malloc(sizeof(int) * len);
-	if (mull == NULL)
+	if (mul == NULL)
 		return (1);
 	for (i = 0; i < len1 + len2; i++)
 		mul[i] = 0;
@@ -83,7 +83,7 @@ int main(int argc, char & argv[])
 		{
 			digit2 = num2[len2] - '0';
 			carry += mul[len1 + len2 + 1] + (digit1 * digit2);
-			mul[len1 + len2 + 1] carry % 10;
+			mul[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
 		if (carry > 0)
