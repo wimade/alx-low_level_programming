@@ -9,7 +9,7 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *temp;/*pointer to the temporary node address*/
-	listint_t *cur,/*pointer to the current node address*/
+	listint_t *cur;/*pointer to the current node address*/
 
 		  if (head != NULL)
 		  {
