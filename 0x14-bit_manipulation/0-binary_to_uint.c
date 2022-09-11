@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 
-		ifn (b[len] & 1)
+		if (b[len] & 1)
 		{
 			ui += base_t;
 		}
