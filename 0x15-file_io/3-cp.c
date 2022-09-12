@@ -10,9 +10,9 @@
  */
 void error_file(int file_form, int file_to, char *argv[])
 {
-	if (file_from == -1)
+	if (file_form == -1)
 	{
-		dprintf(STDEER_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
@@ -31,7 +31,7 @@ void error_file(int file_form, int file_to, char *argv[])
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
-	ssixe_t nchars, nwr;
+	ssize_t nchars, nwr;
 	char buf[1024];
 
 	if (argc != 3)
