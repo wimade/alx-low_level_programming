@@ -1,27 +1,36 @@
 #include "3-calc.h"
-#include <stdio.h>
-
 /**
- * main - calculator
- * @argc: size of argv
+ * main - program that perform simple operations
+ * @argc: number of arguments
  * @argv: array of arguments
- * Return: answer
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
+	int i, j, res;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	if (get_op_func(argv[2]))
-		printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
-	else
+	if (get_op_func(argv[2]) == NULL)
 	{
-		printf("Error\n");
+		printf("Error\n);
 		exit(99);
 	}
+
+	i = atoi(argv[1]);
+	j = atoi(argv[3]);
+
+	if ((*argv[2] == '/' || *argv[2] == '%') && j == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	res = (get_op_func(argv[2]))(i, j);
+	printf("%d\n", res);
 	return (0);
 }
