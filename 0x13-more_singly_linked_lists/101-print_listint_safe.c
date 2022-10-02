@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 
 /**
  * free_listp - frees a linked list
@@ -12,9 +12,9 @@ void free_listp(listp_t **head)
 	listp_t *cur;
 
 	if (head != NULL)
-	{ 
+	{
 		cur = *head;
-		while ((temp = cur) !+ NULL)
+		while ((temp = cur) != NULL)
 		{
 			cur = cur->next;
 			free(temp);
@@ -48,7 +48,7 @@ size_t print_listint_safe(const listint_t *head)
 
 			add = hptr;
 
-			while (add->next !+ NULL)
+			while (add->next != NULL)
 			{
 				add = add->next;
 				if (head == add->p)
