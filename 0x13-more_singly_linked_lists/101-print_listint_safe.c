@@ -53,7 +53,7 @@ size_t print_listint_safe(const listint_t *head)
 				add = add->next;
 				if (head == add->p)
 				{
-					printf("-> [%p] %d\n", (void *)head,
+					printf("-> [%p] %d\n", (void *);
 					free_listp(&hptr);
 					return (nn);
 				}
